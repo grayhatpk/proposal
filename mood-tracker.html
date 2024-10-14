@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthHub - Mood Tracker</title>
+    <link rel="stylesheet" href="mood-tracker.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navigation-bar">
+        <button onclick="window.location.href='mood-tracker.html'">MoodTracker</button>
+        <button onclick="window.location.href='mindfulness.html'">Mindfulness</button>
+        <button onclick="window.location.href='chatrooms.html'">Chatrooms</button>
+        <button onclick="window.location.href='resources.html'">Resources</button>
+        <button onclick="window.location.href='counseling.html'">Counseling</button>
+    </div>
+    <div class="container">
+        <h1>Welcome to the HealthHub Mood Tracker</h1>
+        <form id="mood-form">
+            <label for="mood">Today's Mood:</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="neutral">Neutral</option>
+                <option value="anxious">Anxious</option>
+                <option value="excited">Excited</option>
+            </select>
+            <button type="submit">Log Mood</button>
+        </form>
+        <div class="chart-container">
+            <canvas id="mood-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
