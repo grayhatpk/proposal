@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthHub - Peer Support Chatrooms</title>
+    <link rel="stylesheet" href="chatrooms.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <button onclick="window.location.href='mood-tracker.html'">MoodTracker</button>
+        <button onclick="window.location.href='mindfulness.html'">Mindfulness</button>
+        <button onclick="window.location.href='chatrooms.html'">Chatrooms</button>
+        <button onclick="window.location.href='resources.html'">Resources</button>
+        <button onclick="window.location.href='counseling.html'">Counseling</button>
+    </div>
+    <div class="container">
+        <h1>Peer Support Chatrooms</h1>
+        <div id="chatroom">
+            <div id="messages"></div>
+            <div id="typing-indicator"></div>
+            <form id="message-form">
+                <input type="text" id="message" placeholder="Type a message..." autocomplete="off">
+                <button type="submit">Send</button>
+                <input type="file" id="file-input" style="display: none;">
+            </form>
+        </div>
+    </div>
+
+    <script src="chatroom.js"></script>
+</body>
+</html>
